@@ -1,25 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather App</title>
-    <link rel="stylesheet" href="./style.css">
-</head>
-<body>
-    <div class="Main">
-
-
-        <div class="mainB">
-            <h1 class="center">Get you city Temperature</h1>
-            <form action="/" method="post">
-                <label for="cityInput">City Name</label>
-                <input id="cityInput" type="text" name="cityName">
-                <button type="submit">Go</button>
-            </form>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Weather App</title>
+        <!-- <link rel="stylesheet" href="./style.css"> -->
+        <style>
+        h1{
+            text-align: center;
+        }
+        .mainB{
+            text-align: center;
+        }
+        .Main{
+            border: 2px solid black;
+            padding: 200px;
+            background-color: antiquewhite;
+        }
+        label{
+            font-size: 25px;
+            padding-top: 10px;
+        }
+    </style>
+    </head>
+    <body>
+        <div class="Main">
+            <div class="mainB">
+                <h1 class="center">Get your City Temperature Here</h1>
+                <hr>
+                <form action="/" method="post">
+                    <label for="cityInput">City Name:</label>
+                    <input id="cityInput" type="text" name="cityName">
+                    <button type="submit" aria-placeholder="City Name">Go</button>
+                </form>
+            </div>
         </div>
-        
-    </div>
-</body>
+    </body>
 </html>
